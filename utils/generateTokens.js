@@ -4,7 +4,7 @@ module.exports = (id, email) => {
     { id: id, email: email },
     process.env.ACCESS_TOKEN_SECRET,
     {
-      expiresIn: "15s",
+      expiresIn: "15m",
     }
   );
   const refreshToken = jwt.sign(
